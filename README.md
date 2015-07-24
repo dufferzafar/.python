@@ -1,5 +1,9 @@
-# .python
-Little functions that lie in my pythonpath.
+
+<div align="center">
+ <img src="logo.png" width="211" height="64">
+  <p>Little functions that live in my pythonpath.</p>
+</div>
+
 
 ## Installation
 
