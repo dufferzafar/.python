@@ -23,8 +23,8 @@ $ python
 To set the environment when you load your shell:
 
 ```
-echo "export PYTHONPATH=$PYTHONPATH:$HOME/.python" > .bashrc
-echo "export PYTHONPATH=$PYTHONPATH:$HOME/.python" > .zshrc
+echo "export PYTHONPATH=$PYTHONPATH:$HOME/.python" >> .bashrc
+echo "export PYTHONPATH=$PYTHONPATH:$HOME/.python" >> .zshrc
 ```
 
 Learn more about [`PYTHONPATH`](https://docs.python.org/2/using/cmdline.html#environment-variables).
