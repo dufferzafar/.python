@@ -30,3 +30,24 @@ def json(inp, indent=''):
             print('{},'.format(val))
 
     print('[0m' + indent + '}')
+
+
+def request(req):
+    """
+    Pretty Print a prepared request.
+
+    >>> req = requests.Request(
+            'POST',
+            'http://stackoverflow.com',
+            data='a=1&b=2'
+            headers={'X-Custom':'Test'},
+        )
+    >>> pretty.request(req.prepare())
+    """
+
+    print('{}\n{}\n{}\n\n{}'.format(
+        '-----------Request-----------',
+        req.method + ' ' + req.url,
+        '\n'.join('{}: {}'.format(k, v) for k, v in req.headers.items()),
+        req.body,
+    ))
